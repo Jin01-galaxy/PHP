@@ -1,14 +1,28 @@
+<?php
+$scores = [90, 72, 58, 80];
+$total = array_sum($scores);
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP test</title>
 </head>
+
 <body>
-    <?php 
-        echo "Hello<br/>"; 
-    ?>
+    <h3>Scores</h3>
+    <hr>
+    <ul>
+        <?php
+        for ($i = 0; $i < count($scores); $i++) {  ?>
+            <li><?php echo $scores[$i]; ?></li>
+        <?php } ?>
+    </ul>
+    <p>Total: <?php echo $total; ?></p>
 </body>
+
 </html>
