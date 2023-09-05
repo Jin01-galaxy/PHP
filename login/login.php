@@ -2,12 +2,15 @@
 $id = $_POST["id"];
 $password = $_POST["password"];
 
-$message = "NG";
+// $message = "NG";
 if ($id === "Andy" && $password === "secret") {
-    $message = "OK";
+    header("Location: menu.php");
+} else {
+    header("Location: login.html");
 }
-?>
 
+?>
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,4 +20,4 @@ if ($id === "Andy" && $password === "secret") {
 <body>
     <h2>Login <?php echo $message ?></h2>
 </body>
-</html>
+</html> -->
